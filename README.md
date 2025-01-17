@@ -2,5 +2,15 @@
 
 ### Self hosted website on RPI4
 
-### Node.js server, NGINX reverse proxy and javascript, css, html website
+
+## Tech stack
+
+**Backend**
+- node.js
+- NGINX reverse proxy
+
+**Frontend** 
+- Javascript, html, css
+
+
 
