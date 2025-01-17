@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     padding: 0;
     transition: all 0.1s;
-
+    
 }
 
 body {
@@ -81,16 +81,29 @@ nav a {
     background-color: var(--ghost-white);
 }
 .projectsContainer {
-    overflow: scroll;
-    flex-wrap: nowrap;
-    border-right: 2px dashed rgb(0, 0, 0);
+    overflow-x: scroll;
+    overflow-y: hidden;
 
+    flex-wrap: nowrap;
+    border-right: 2px dashed black; /* Optional: Add left border */
+
+}
+::-webkit-scrollbar {
+    background-color: white;
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(231, 231, 231) ;
+    border-radius: 5px;
 }
 
 .project {
     min-width: 250px;
     margin-right: 4%;
     max-width: 30%;
+    margin: 0 4% 0 0 !important;
+
 }
 
 .project h5  {
@@ -132,4 +145,16 @@ footer {
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .content {
+        padding: 40px 20px;
+        margin: 40px 0;
+    }
+    body {
+        padding: 0px;
+        margin: 0;
+    }
 }
