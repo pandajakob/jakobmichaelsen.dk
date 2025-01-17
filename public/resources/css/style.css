@@ -1,0 +1,135 @@
+:root {
+    --ghost-white: #ffffff;
+    --black-olive: #484538;
+    --blue: #20a4f3;
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    transition: all 0.1s;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: var(--ghost-white);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#header {
+    background-color: var(--black-olive);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+
+.textbox {
+    max-width: 550px;
+}
+
+header nav a {
+    color: var(--ghost-white)
+}
+
+.portrait {
+    width: 200px;
+    border: 2px solid black;
+}
+.box-shadow {
+    box-shadow: 10px 10px 0px black !important;  
+
+}
+img {
+    max-width: 100%;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    background-color: white;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--ghost-white);
+}
+.projectsContainer {
+    overflow: scroll;
+    flex-wrap: nowrap;
+    border-right: 2px dashed rgb(0, 0, 0);
+
+}
+
+.project {
+    min-width: 250px;
+    margin-right: 4%;
+    max-width: 30%;
+}
+
+.project h5  {
+    margin-bottom: -8px;
+}
+
+.project p {
+    font-size: 0.8rem;
+    padding: none;
+}
+
+.greenButton {
+    margin: auto;
+    background-color: var(--black-olive);
+    padding: 10px;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+
+}
+button:hover {
+    background-color: white;
+    box-shadow: none !important; 
+
+    color: black;
+}
+
+button:active {
+    transform: scale(0.89);
+}
+
+.border {
+    border: 2px solid black;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}

@@ -1,35 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <title>Jakob Michaelsen: Software student</title>
+    <link rel="stylesheet" href="resources/css/style.css">
 
 
 </head>
+
 <body>
     <div class="container">
-        <header>
-            <h1>Welcome to My Website</h1>
+        <header class="content box-shadow align-space-between" id="header">
+            <h1>Jakob Michaelsen: Software student</h1>
             <nav>
-                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
 
-        <div class="content">
+        <div id="about" class="content">
             <h2>About Me</h2>
-            <p>Im a software student at Aalborg University Copenhagen</p>
-
-            <h2> This website is hosted on a rasberry pi 5 home server</h2>
-            
+            <div class="flex space-between">
+                <div class="textbox">
+                    <p>
+                        I am a software engineering student based in Denmark, currently pursuing my first year at Aalborg University Copenhagen. With over two years of programming experience, I have developed various applications and continuously seek to enhance my skills.
+                    </p>
+                    <p>
+                        <strong>Languages I Speak:</strong> Danish, English, Russian
+                    </p>
+                    <p>
+                        <strong>Programming Experience:</strong> JavaScript, C, Swift, HTML, CSS
+                    </p>
+                    <p>
+                        <strong>Frameworks & Tools:</strong> Xcode, React.js, Express.js, Firebase
+                    </p>
+                </div>
+                <img class="portrait box-shadow" src="resources/images/IMG_5357.jpeg" alt="Portrait of Jakob Michaelsen">
+            </div>
         </div>
+        
+    
+
+        <div class="content" id="projects">
+            <h2> Projects</h2>
+            <div>
+                <h3> Web/Javascript projects:</h3>
+                <div class="projectsContainer flex ">
+                    <div class="project content box-shadow">
+                        <h4> BUQ tablebooking</h4>
+                        <h5> Description </h5>
+                        <p class="description"> BUQ is a simple table booking software designed to help 
+                            restaurants manage table reservations efficiently. BUQ has a customer-end and administrators-end. 
+                            The software is currently in development and serves as a learning project
+                        </p>
+                        <p> <strong> Frontend: </strong>React.js</p>
+
+                        <p> <strong> Backend;</strong> Firebase firestore + auth</p>
+                        <a href="https://github.com/pandajakob/BUQ">
+                        <button class="greenButton border box-shadow ">  Go To Repo </button></a>
+                    </div>
+
+                    <div class="project content box-shadow">
+                        <h4> Compound Interest Calculator</h4>
+                        <h5> Description </h5>
+                        <p class="description"> 
+                            A simple compound interest calculator which gives insight into the power of compound interest by graph and pie chart visualisation
+                        </p>
+                        <p> <strong> Frontend: </strong>HTML, CSS, JS</p>
+
+                        <p> <strong> Backend:</strong> none</p>
+
+                        <a href="https://pandajakob.github.io/projects/compoundInterestCalculator/">
+                        <button class="greenButton border box-shadow">  Try Program </button></a>
+                    </div>
+            
+                </div>
+
+                <h3> C projects</h3>
+
+                <div class="project content box-shadow">
+                    <h4> P1 student project</h4>
+                    <h5> Description </h5>
+                    <p class="description"> 
+                        This P1 project involved creating a C program to assist AAU students in finding jobs. The program filters and sorts mock job data based on parameters and research, then generates an HTML file displaying the results in tables.
+                    </p>
+                    <p> <strong> Frontend: </strong>HTML, C</p>
+
+                    <p> <strong> Backend:</strong> none</p>
+
+                    <a href="https://github.com/pandajakob/AAU-P1-Student-Project-Job-Commute-Helper">
+                    <button class="greenButton border box-shadow">  Go to repo </button></a>
+                </div>
+             
+
+                <h3> Switft/ios projects</h3>
+
+              
+            </div>
+           
+        </div>
+
+        <div class="content" id="contact">
+            <h2> Contact</h2>
+            <div>
+                <a  href="mailto: jakobm.dev@gmail.com"> jakobm.dev@gmail.com</a> <br />
+                <a href="https://www.linkedin.com/in/jakob-michaelsen-21a712329/"> linkedIn</a> <br />
+                <a href="https://github.com/pandajakob/"> Github</a>
+            </div>
+        </div>
+
+
+
+
 
         <footer>
             <p>&copy; 2025 Jakob Michaelsen All rights reserved.</p>
         </footer>
     </div>
 </body>
+
 </html>
