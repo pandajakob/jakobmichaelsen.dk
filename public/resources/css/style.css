@@ -80,10 +80,10 @@ nav a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: var(--ghost-white);
 }
+
 .projectsContainer {
     overflow-x: scroll;
     overflow-y: hidden;
-
     flex-wrap: nowrap;
     border-right: 2px dashed black; /* Optional: Add left border */
 
@@ -100,9 +100,9 @@ nav a {
 
 .project {
     min-width: 250px;
-    margin-right: 4%;
+    margin-right: 40px;
     max-width: 30%;
-    margin: 0 4% 0 0 !important;
+
 
 }
 
@@ -147,11 +147,20 @@ footer {
     border-radius: 5px;
 }
 
+
 @media (max-width: 768px) {
 
     .content {
         padding: 40px 20px;
         margin: 40px 0;
+    }
+    .project {
+        margin-right: 20px;
+        max-width: none;
+        min-width: 300px;
+    }
+    #header {
+        margin-top: 0;
     }
     body {
         padding: 0px;
