@@ -32,6 +32,7 @@ body {
     border-radius: 5px;
 }
 
+
 a:hover {
     text-decoration: underline;
 }
@@ -159,11 +160,17 @@ footer {
         max-width: none;
         min-width: 300px;
     }
+    .projectsContainer {
+        border-right: 0.1px solid black;
+    }
     #header {
         margin-top: 0;
     }
     body {
         padding: 0px;
         margin: 0;
+    }
+    .portrait {
+        width: 220px;
     }
 }
