@@ -1,5 +1,4 @@
 const express = require('express');
-const { createServer } = require('node:http');
 const { exec } = require("child_process");
 const bodyParser = require("body-parser");
 
@@ -11,6 +10,24 @@ const app = express();
 
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+
+app.get('/projects', (req, res) => {
+	fs.readFile('data.json', function(err, data) {
+		if (err) throw err;
+		const projects = JSON.parse(data);
+		res.send(projects);
+	});
+});
+
+app.get('/')
+
+app.get('/test', (req,res) => {
+	res.send('test-works')
+});
+
 
 
 
@@ -36,18 +53,6 @@ app.post("/webhook", (req, res) => {
 });
 
 
-
-app.get('/projects', (req, res) => {
-	fs.readFile('data.json', function(err, data) {
-		if (err) throw err;
-		const projects = JSON.parse(data);
-		res.send(projects);
-	});
-});
-
-app.get('/test', (req,res) => {
-	res.send('test-works')
-});
 
 // Start the server
 app.listen(PORT, () => {
